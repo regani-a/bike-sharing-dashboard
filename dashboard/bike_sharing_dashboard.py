@@ -7,8 +7,8 @@ import streamlit as st
 sns.set(style='darkgrid')
 
 # Load datasets
-day_df = pd.read_csv("../data/day.csv")
-hour_df = pd.read_csv("../data/hour.csv")
+day_df = pd.read_csv("./data/day.csv")
+hour_df = pd.read_csv("./data/hour.csv")
 
 # Data Preprocessing
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
